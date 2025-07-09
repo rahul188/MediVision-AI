@@ -20,7 +20,7 @@ from logger_utils import (
 
 # Configure Streamlit page
 st.set_page_config(
-    page_title="MedGemma 4B-IT POC",
+    page_title="MediVision-AI",
     page_icon="🏥",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -110,7 +110,7 @@ if 'model_loaded' not in st.session_state:
     st.session_state.model_loaded = False
 
 # Main header
-st.markdown('<h1 class="main-header">🏥 MedGemma 4B-IT POC</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">🏥 MediVision-AI</h1>', unsafe_allow_html=True)
 
 # GPU/CPU Status indicator at the top
 device_available = "cuda" if torch.cuda.is_available() else "cpu"
